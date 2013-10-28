@@ -12,11 +12,8 @@ import unittest
 
 class Problem0001():
     def sum_multiples_below_n(self, n):
-        multiples_sum = 0
-        for number in range(1, n):
-            if number % 3 == 0 or number % 5 == 0:
-                multiples_sum += number
-        return multiples_sum
+        return sum([number for number in range(1, n) if number % 3 == 0 or\
+            number % 5 == 0])
 
     def run(self):
         print 'The sum of all the multiples of 3 and 5 below 1000 equals %i' %\
