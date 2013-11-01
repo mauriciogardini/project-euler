@@ -23,12 +23,6 @@ class Problem0005():
                 for divisor in divisors)
         return dividend
 
-    def is_prime(self, n):
-        for number in range(2, (n/2) + 1):
-            if n % number == 0:
-                return False
-        return True
-
     def run(self):
         print 'The smallest positive number that is divisible from 1 to 20 '\
         'is %i' % self.smallest_number_divisible_by_1_to_n(20)
