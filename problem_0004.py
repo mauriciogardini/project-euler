@@ -8,6 +8,7 @@ Find the largest palindrome made from the product of two 3-digit numbers.
 """
 
 import sys
+import timer
 import unittest
 
 class Problem0004():
@@ -37,4 +38,5 @@ if __name__ == '__main__':
         unittest.main()
     else:
         problem0004 = Problem0004()
-        problem0004.run()
+        with timer.Timer() as problem_timer:
+            problem0004.run()

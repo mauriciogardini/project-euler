@@ -7,6 +7,7 @@ What is the largest prime factor of the number 600851475143?
 """
 
 import sys
+import timer
 import unittest
 
 class Problem0003():
@@ -48,4 +49,5 @@ if __name__ == '__main__':
         unittest.main()
     else:
         problem0003 = Problem0003()
-        problem0003.run()
+        with timer.Timer() as problem_timer:
+            problem0003.run()

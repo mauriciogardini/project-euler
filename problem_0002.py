@@ -11,6 +11,7 @@ exceed four million, find the sum of the even-valued terms.
 """
 
 import sys
+import timer
 import unittest
 
 class Problem0002():
@@ -43,4 +44,5 @@ if __name__ == '__main__':
         unittest.main()
     else:
         problem0002 = Problem0002()
-        problem0002.run()
+        with timer.Timer() as problem_timer:
+            problem0002.run()

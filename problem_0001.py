@@ -8,6 +8,7 @@ Find the sum of all the multiples of 3 or 5 below 1000.
 """
 
 import sys
+import timer
 import unittest
 
 class Problem0001():
@@ -32,4 +33,5 @@ if __name__ == '__main__':
         unittest.main()
     else:
         problem0001 = Problem0001()
-        problem0001.run()
+        with timer.Timer() as problem_timer:
+            problem0001.run()
