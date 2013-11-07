@@ -24,7 +24,7 @@ class TestSumMultiples(unittest.TestCase):
     def setUp(self):
         self.problem_0001 = Problem0001()
 
-    def test_sum_10(self):
+    def test_sum_multiples_below_10(self):
         self.assertEqual(self.problem_0001.sum_multiples_below_n(10), 23)
 
 if __name__ == '__main__':

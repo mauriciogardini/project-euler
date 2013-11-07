@@ -30,7 +30,7 @@ class Problem0002():
         print 'The sum of all the even Fibonacci numbers under 4000000 '\
             'equals %i' % (self.sum_even_fibonacci_numbers_under_n(4000000))
 
-class TestSumMultiples(unittest.TestCase):
+class TestEvenFibonacci(unittest.TestCase):
     def setUp(self):
         self.problem_0002 = Problem0002()
 

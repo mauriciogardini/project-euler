@@ -33,7 +33,7 @@ class TestLargestPrimeFactor(unittest.TestCase):
     def setUp(self):
         self.problem_0003 = Problem0003()
 
-    def test_sum_even_fibonacci_numbers_under_100(self):
+    def test_largest_prime_factor_13195(self):
         self.assertEqual(self.problem_0003.\
             largest_prime_factor_n(13195), 29)
 

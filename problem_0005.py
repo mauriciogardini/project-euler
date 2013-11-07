@@ -27,11 +27,11 @@ class Problem0005():
         print 'The smallest positive number that is divisible from 1 to 20 '\
         'is %i' % self.smallest_number_divisible_by_1_to_n(20)
 
-class TestLargestPrimeFactor(unittest.TestCase):
+class TestSmallestPositiveNumberDivisible(unittest.TestCase):
     def setUp(self):
         self.problem_0005 = Problem0005()
 
-    def test_sum_even_fibonacci_numbers_under_100(self):
+    def test_smallest_positive_number_divisible_1_to_10(self):
         self.assertEqual(self.problem_0005.\
             smallest_number_divisible_by_1_to_n(10), 2520)
 

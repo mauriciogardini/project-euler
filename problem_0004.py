@@ -24,11 +24,11 @@ class Problem0004():
         print 'The largest palindrome made from the product of two 3-digit '\
         'numbers is %i' % self.largest_palindrome_product_n_digit_numbers(3)
 
-class TestLargestPrimeFactor(unittest.TestCase):
+class TestLargestPalindrome(unittest.TestCase):
     def setUp(self):
         self.problem_0004 = Problem0004()
 
-    def test_sum_even_fibonacci_numbers_under_100(self):
+    def test_largest_palindrome_product_2_digit_numbers(self):
         self.assertEqual(self.problem_0004.\
             largest_palindrome_product_n_digit_numbers(2), 9009)
 
